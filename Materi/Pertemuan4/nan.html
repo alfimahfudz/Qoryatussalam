@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.writeln(`<p>${parseInt("salah")}<p/>`);//NaN
+        document.writeln(`<p>${parseFloat("1.1text")}<p/>`);//1.1
+
+        //Number()   tdk mentolelir kslhn data
+        document.writeln(`<p>${Number("1.1ups")}<p/>`);//NaN
+        document.writeln(`<p>${Number("1x")}<p/>`);//Nan
+        document.writeln(`<p>${Number("Bukan number")}<p/>`);//Nan
+
+    </script>
+
+</body>
+
+</html>

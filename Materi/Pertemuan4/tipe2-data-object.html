@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const orang = {
+            'nama lengkap' : "Alfi Mahfudzoh",
+            'no telp' : "08xxxx",
+            alamat: "Rembang",
+            umur: 21
+        };
+// ubah prooerty/arrtibute
+        let person = {}
+        person["nama"] = "Alfi Mahfudzoh";
+        person["alamat"] = "Rembang";
+        person["umur"] = 21;
+
+        console.info(`Nama : ${orang["nama lengkap"]}`);
+        console.info(`No Telpon : ${orang['no telp']}`);
+        console.info(`Alamat : ${orang.alamat}`);
+        console.info(`umur : ${orang.umur}`);
+
+        console.table(orang);
+        delete person["umur"];
+
+        console.table(orang);
+    </script>
+
+</body>
+
+</html>

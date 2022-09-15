@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const orang = {};
+
+        //mnbah atau mngubah
+        orang["nama"] = "Alfi Mahfudzoh";
+        orang["alamat"] = "Rembang";
+        orang["umur"] = 21;
+        // menghapus
+        delete orang["umur"];
+        //cara nulis object ke2
+        const orang1 = {
+            nama: "Mahfudzoh",
+            alamat: "sidoarjo",
+            umur: 21,
+        };
+
+        const human = {
+            'nama lengkap' : "Alfi Mahfudzoh",
+            'no telp' : "08xxxx",
+            alamat: "Rembang",
+            umur: 21
+        };
+        // ubah property/atribrute
+        let person     = {}
+        person["nama"] = "Alfi Mahfudzoh";
+        person["alamat"] = "Rembang";
+        person["umur"] = 21;
+
+        console.info(`Nama : ${human["nama lengkap"]}`);
+        console.info(`No Telpon : ${human['no.telp']}`);
+        console.info(`Alamat : ${human.alamat}`);
+        console.info(`umur : ${human.umur}`);
+        
+        console.table(human);
+        delete orang["umur"];
+
+        console.table(human);
+
+
+        console.table(orang);
+        console.table(orang1);
+
+
+    </script>
+
+</body>
+
+</html>

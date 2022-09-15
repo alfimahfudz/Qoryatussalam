@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //versi lama
+        const name = "Alfi Mahfudzoh";
+        const firstName = "Alfi";
+        const middleName = "al";
+        const lastName = "Mahfudzoh";
+        const template = `Name : ${firstName} ${middleName} ${lastName}`;
+        const lama = "Name : " + firstName + "" + middleName + lastName;
+
+        console.info(template);
+
+        const nilai = 50;
+        const template2 = `Name : ${name}, Lulus : ${nilai > 70}`; //pake backtick bro
+
+        console.info(template2)
+
+
+        let multilineString = `
+        Nama saya alfi,
+        sekarang ngopi,
+        suka nulis kalo lagi sendiri,
+        `;
+        //cara nampilin kata dihtml pake backtick
+
+        document.writeln("<pre>");
+        document.writeln(multilineString);
+        document.writeln("</pre>");
+    </script>
+
+</body>
+
+</html>

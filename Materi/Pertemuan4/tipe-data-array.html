@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arrayNama = ["Alfi", "Titin", "Niha"];
+
+        console.table(arrayNama);
+
+        console.info(arrayNama[0]);
+        console.info(arrayNama[1]);
+        console.info(arrayNama[2]);
+        //cara  megisi data1
+        let siswa = [];
+        siswa[0] = 'salma';
+        siswa[1] = 'salim';
+        //cara2 ngepush
+        siswa.push('nida');
+        siswa.push('tika');
+        //push jg
+        siswa.push('tiara', 'susi', 'suro');
+        //chage
+        siswa[1] = 'somai';
+        delete siswa[1];
+        siswa.sort(); //urutkan abjad A-Z
+        siswa.reverse(); //urutkan dari Z-A
+        siswa[siswa.length] = 'data baru'; //nmbah dta jg
+        console.table(siswa);
+        //jumlah array
+        console.info(siswa.length); 
+        //array pakenya kurung siku []
+
+
+    </script>
+
+</body>
+
+</html>
