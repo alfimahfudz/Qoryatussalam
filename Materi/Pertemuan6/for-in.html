@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>file</title>
+</head>
+
+<body>
+
+    <script>
+        const person = {
+            firstName: "Alfi",
+            middleName: "Al",
+            lastName: "Mahfudzoh"
+        }
+        //kalau mau cetak firstname saja
+        console.log(person.firstName);
+        
+        for (const property in person) {
+            console.log(`property ${property}: ${person[property]}`);
+        }
+
+        //array
+        const names = ["Alfi", "Al", "Mahfudzoh"];
+        for (const index in names) {
+            document.writeln(`<p>Index ${index}: ${names[index]}</p>`);
+        }
+        //latihan array
+        const human =  ["Alfi", "Titin", "Miya"];
+            
+    
+        
+        for (const property in human) {
+            console.log(`property ${property}: ${human[property]}`);
+        }
+
+    </script>
+</body>
+
+</html>
