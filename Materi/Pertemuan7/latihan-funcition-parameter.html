@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // jika nilainya >=90 mndpatkan A
+        // jika nilainya >=80 tapi tdk lbh besar dari 90 B
+        // jika nilainya >=70 tapi tdk lnh besar dari 80 C
+        // jika nilainya >=60 tapi tdk lnh besar dari 70 D
+        // jika <60 maka E
+
+
+
+        //cara 1
+        let nilai = prompt("masukan nilai")
+        function hasilnya() {
+
+            if (nilai >= 90) {
+                document.writeln(`<p>Nilai saya <b>${nilai} </b> maka<b> A</b></p>`);
+
+            } else if (nilai >= 80) {
+                document.writeln(`<p>Nilai saya <b>${nilai} </b> maka<b> B</b></p>`);
+
+            } else if (nilai >= 70) {
+                document.writeln(`<p>Nilai saya <b>${nilai} </b> maka<b> C</b></p>`);
+
+            } else if (nilai >= 60) {
+                document.writeln(`<p>Nilai saya <b>${nilai} </b> maka<b> D</b></p>`);
+            } else {
+                document.writeln(`<p>Nilai saya ${nilai}  maka<b> E</b></p>`);
+
+            }
+        }
+
+        hasilnya();
+
+        //cara 2
+        function convNilai(nilai) {
+            if (nilai >= 90) {
+                return "A";
+            } else if (nilai >= 80) {
+                return "B";
+            } else if (nilai >= 70) {
+                return "C";
+            } else if (nilai >= 60) {
+                return "D";
+            } else {
+                return "E";
+            }
+
+        }
+
+        let masukanNilai = prompt("brapa nialimu");
+        let hasil = convNilai(masukanNilai);
+        document.writeln(`Nilaimu adalah ${hasil}`);
+
+    </script>
+
+
+
+</body>
+
+</html>
